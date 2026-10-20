@@ -1,0 +1,35 @@
+item_id,order_id,product_type,size,color,finish,quantity,unit_price_usd,quarantine_reason
+ITM-000228,ORD-00105,Slider,#10,Gun Metal,Antique,68900,0.022,parent_order_quarantined
+ITM-000229,ORD-00105,Metal Zipper,#8,Red,Antique,48000,0.156,parent_order_quarantined
+ITM-000230,ORD-00105,Nylon Zipper,#5,White,Polished,80200,0.07,parent_order_quarantined
+ITM-000286,ORD-00136,Nylon Zipper,#8,Red,Polished,168100,0.06,parent_order_quarantined
+ITM-000287,ORD-00136,Slider,#5,Red,Matte,203700,0.023,parent_order_quarantined
+ITM-000288,ORD-00136,Puller,#8,White,Antique,286600,0.029,parent_order_quarantined
+ITM-000507,ORD-00254,Rivet,18L,Black,Polished,111200,0.075,parent_order_quarantined
+ITM-000508,ORD-00254,Snap Button,20L,Gun Metal,Nickel-free plating,207700,0.082,parent_order_quarantined
+ITM-000509,ORD-00255,Snap Button,14L,Navy,Nickel-free plating,221500,0.114,parent_order_quarantined
+ITM-000614,ORD-00303,Metal Zipper,#10,Navy,Painted,44700,0.134,parent_order_quarantined
+ITM-000615,ORD-00304,Slider,#3,Antique Brass,Painted,243400,0.048,parent_order_quarantined
+ITM-000755,ORD-00375,Slider,#8,Khaki,Painted,160500,0.057,parent_order_quarantined
+ITM-000756,ORD-00375,Puller,#10,White,Matte,215800,0.039,parent_order_quarantined
+ITM-000870,ORD-00434,Nylon Zipper,#8,Red,Antique,111000,0.129,parent_order_quarantined
+ITM-000871,ORD-00434,Slider,#5,Antique Brass,Nickel-free plating,213200,0.034,parent_order_quarantined
+ITM-000872,ORD-00434,Puller,#5,Red,Antique,131800,0.015,parent_order_quarantined
+ITM-000876,ORD-00437,Slider,#8,Khaki,Painted,234300,0.026,parent_order_quarantined
+ITM-000877,ORD-00437,Nylon Zipper,#5,Khaki,Matte,147600,0.077,parent_order_quarantined
+ITM-000878,ORD-00437,Metal Zipper,#8,Black,Nickel-free plating,50100,0.248,parent_order_quarantined
+ITM-000885,ORD-00440,Rivet,18L,Navy,Polished,213200,0.049,parent_order_quarantined
+ITM-000964,ORD-00479,Slider,#8,Khaki,Matte,103800,0.039,parent_order_quarantined
+ITM-000965,ORD-00479,Puller,#10,Black,Polished,275900,0.028,parent_order_quarantined
+ITM-001334,ORD-00660,Metal Zipper,#10,Silver,Antique,32600,0.176,parent_order_quarantined
+ITM-001335,ORD-00660,Nylon Zipper,#3,Silver,Painted,98400,0.133,parent_order_quarantined
+ITM-001452,ORD-00719,Snap Button,18L,Black,Antique,54400,0.145,parent_order_quarantined
+ITM-001453,ORD-00719,Metal Button,24L,Silver,Polished,23900,0.198,parent_order_quarantined
+ITM-001646,ORD-00817,Snap Button,18L,White,Matte,266800,0.14,parent_order_quarantined
+ITM-001708,ORD-00846,Nylon Zipper,#5,Gun Metal,Nickel-free plating,180700,0.087,parent_order_quarantined
+ITM-001718,ORD-00852,Slider,#3,Gun Metal,Painted,66400,0.042,parent_order_quarantined
+ITM-001719,ORD-00852,Puller,#8,Antique Brass,Nickel-free plating,272200,0.04,parent_order_quarantined
+ITM-001720,ORD-00852,Metal Zipper,#5,Antique Brass,Polished,10800,0.34,parent_order_quarantined
+ITM-002104,ORD-01043,Snap Button,20L,White,Polished,176200,0.139,parent_order_quarantined
+ITM-002105,ORD-01043,Rivet,24L,Antique Brass,Matte,97200,0.046,parent_order_quarantined
+ITM-002328,ORD-01155,Puller,#3,Red,Painted,125600,0.018,parent_order_quarantined

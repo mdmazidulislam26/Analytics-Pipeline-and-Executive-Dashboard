@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tex Fasteners – SVP Executive Dashboard</title>
+<style>
+:root{--bg:#f5f6f8;--card:#fff;--tx:#1b1f27;--mu:#667085;--ln:#e3e6eb;--ac:#1f5fa8;--ac2:#e07b00;
+--good:#1d7a4f;--warn:#b7791f;--bad:#c0392b;--gb:#e0f3ea;--wb:#fbf0d6;--bb:#fbe3e0;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#14161b;--card:#1d2027;--tx:#eceef2;--mu:#98a0ae;--ln:#2e323b;--ac:#6ea8ee;--ac2:#f0a04b;--good:#6fd0a1;--warn:#e6bd6e;--bad:#f0877b;--gb:#16342a;--wb:#3a2f14;--bb:#3e2220}}
+:root[data-theme=dark]{--bg:#14161b;--card:#1d2027;--tx:#eceef2;--mu:#98a0ae;--ln:#2e323b;--ac:#6ea8ee;--ac2:#f0a04b;--good:#6fd0a1;--warn:#e6bd6e;--bad:#f0877b;--gb:#16342a;--wb:#3a2f14;--bb:#3e2220}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 40px}
+h1{font-size:21px;margin:0}h2{font-size:14px;margin:0 0 10px}.sub{color:var(--mu);font-size:12px;margin:2px 0 16px}
+.grid{display:grid;gap:12px}.k{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}.c2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));margin-top:12px}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:10px;padding:14px}
+.kl{color:var(--mu);font-size:12px}.kv{font-size:24px;font-weight:600}.ks{color:var(--mu);font-size:11px}
+.row{display:grid;grid-template-columns:130px 1fr 64px;gap:8px;align-items:center;margin:6px 0;font-size:12px}
+.t{background:var(--ln);border-radius:4px;height:14px;overflow:hidden}.t i{display:block;height:100%;border-radius:4px}
+.good{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}.bg-good{background:var(--good)}.bg-warn{background:var(--warn)}.bg-bad{background:var(--bad)}.bg-ac{background:var(--ac)}
+.tabs button{border:1px solid var(--ln);background:var(--card);color:var(--tx);padding:3px 10px;border-radius:99px;font-size:12px;cursor:pointer;margin-right:4px}
+.tabs button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--ln)}th{color:var(--mu);font-weight:500}
+.pill{padding:1px 8px;border-radius:99px;font-size:11px}.p-High{background:var(--bb);color:var(--bad)}.p-Medium{background:var(--wb);color:var(--warn)}.p-Low{background:var(--gb);color:var(--good)}
+svg text{fill:var(--mu);font-size:10px}.note{color:var(--mu);font-size:11px;margin-top:14px}
+</style></head><body><main>
+<h1>Tex Fasteners – Executive Dashboard</h1>
+<p class="sub" id="sub"></p>
+<div class="grid k" id="kpis"></div>
+<div class="grid c2">
+<div class="card"><h2>On-time delivery by buyer</h2><div id="buyers"></div></div>
+<div class="card"><h2>OTD trend by deadline month</h2><div class="tabs" id="tabs"></div><div id="trend"></div></div>
+<div class="card"><h2>Machines: downtime hours <span class="ks">(reject rate at right)</span></h2><div id="machines"></div></div>
+<div class="card"><h2>Why orders were late</h2><div id="reasons"></div><h2 style="margin-top:14px">Raw material price, USD/kg</h2><div id="mats"></div></div>
+</div>
+<div class="card" style="margin-top:12px"><h2>Open orders to watch</h2><table id="risk"></table></div>
+<p class="note">Simulated data. Buyer names are fictional. Risk score is rule-based (schedule, buyer history, machine, rejects). Margin is not shown because the data has no cost figures.</p>
+</main>
+<script>
+const D={"summary": {"report_date": "2026-09-30", "total_orders": 1182, "delivered_orders": 1137, "otd_pct": 80.3, "avg_days_late_when_late": 3.1, "open_orders": 37, "open_orders_already_late": 0, "ship_date_unverified": 8, "delivered_value_usd": 28638253.0, "overall_reject_rate_pct": 1.82, "total_downtime_hours": 2991.0}, "buyers": [{"name": "Maple Row Outerwear", "otd": 55.9, "n": 102, "late": 3.5}, {"name": "Veltra Denim Co", "otd": 67.1, "n": 146, "late": 3.0}, {"name": "Aurora Fashion Group", "otd": 79.2, "n": 125, "late": 3.1}, {"name": "Brightloom Kids", "otd": 82.7, "n": 139, "late": 3.6}, {"name": "Northwind Apparel", "otd": 83.8, "n": 222, "late": 2.7}, {"name": "Harbor & Pine", "otd": 85.0, "n": 180, "late": 2.9}, {"name": "Kestrel Sportswear", "otd": 90.8, "n": 141, "late": 2.2}, {"name": "Solace Basics", "otd": 93.9, "n": 82, "late": 3.4}], "trend": [{"m": "2025-03", "u": "Metal Trims", "n": 19, "ok": 11}, {"m": "2025-03", "u": "Zipper", "n": 34, "ok": 22}, {"m": "2025-04", "u": "Metal Trims", "n": 21, "ok": 18}, {"m": "2025-04", "u": "Zipper", "n": 34, "ok": 21}, {"m": "2025-05", "u": "Metal Trims", "n": 17, "ok": 13}, {"m": "2025-05", "u": "Zipper", "n": 41, "ok": 36}, {"m": "2025-06", "u": "Metal Trims", "n": 18, "ok": 15}, {"m": "2025-06", "u": "Zipper", "n": 40, "ok": 34}, {"m": "2025-07", "u": "Metal Trims", "n": 17, "ok": 15}, {"m": "2025-07", "u": "Zipper", "n": 39, "ok": 30}, {"m": "2025-08", "u": "Metal Trims", "n": 20, "ok": 18}, {"m": "2025-08", "u": "Zipper", "n": 37, "ok": 32}, {"m": "2025-09", "u": "Metal Trims", "n": 18, "ok": 11}, {"m": "2025-09", "u": "Zipper", "n": 43, "ok": 33}, {"m": "2025-10", "u": "Metal Trims", "n": 21, "ok": 14}, {"m": "2025-10", "u": "Zipper", "n": 38, "ok": 30}, {"m": "2025-11", "u": "Metal Trims", "n": 17, "ok": 14}, {"m": "2025-11", "u": "Zipper", "n": 50, "ok": 40}, {"m": "2025-12", "u": "Metal Trims", "n": 20, "ok": 16}, {"m": "2025-12", "u": "Zipper", "n": 49, "ok": 45}, {"m": "2026-01", "u": "Metal Trims", "n": 27, "ok": 25}, {"m": "2026-01", "u": "Zipper", "n": 43, "ok": 37}, {"m": "2026-02", "u": "Metal Trims", "n": 21, "ok": 16}, {"m": "2026-02", "u": "Zipper", "n": 41, "ok": 34}, {"m": "2026-03", "u": "Metal Trims", "n": 20, "ok": 13}, {"m": "2026-03", "u": "Zipper", "n": 32, "ok": 24}, {"m": "2026-04", "u": "Metal Trims", "n": 20, "ok": 14}, {"m": "2026-04", "u": "Zipper", "n": 25, "ok": 19}, {"m": "2026-05", "u": "Metal Trims", "n": 25, "ok": 19}, {"m": "2026-05", "u": "Zipper", "n": 48, "ok": 42}, {"m": "2026-06", "u": "Metal Trims", "n": 30, "ok": 25}, {"m": "2026-06", "u": "Zipper", "n": 37, "ok": 32}, {"m": "2026-07", "u": "Metal Trims", "n": 23, "ok": 21}, {"m": "2026-07", "u": "Zipper", "n": 36, "ok": 29}, {"m": "2026-08", "u": "Metal Trims", "n": 16, "ok": 12}, {"m": "2026-08", "u": "Zipper", "n": 38, "ok": 32}, {"m": "2026-09", "u": "Metal Trims", "n": 14, "ok": 12}, {"m": "2026-09", "u": "Zipper", "n": 25, "ok": 18}], "machines": [{"id": "ZM-04", "unit": "Zipper", "hours": 496.0, "rej": 3.62}, {"id": "MT-02", "unit": "Metal Trims", "hours": 476.0, "rej": 3.41}, {"id": "ZM-01", "unit": "Zipper", "hours": 323.0, "rej": 1.46}, {"id": "ZM-03", "unit": "Zipper", "hours": 294.0, "rej": 1.49}, {"id": "MT-03", "unit": "Metal Trims", "hours": 276.0, "rej": 1.32}, {"id": "ZM-02", "unit": "Zipper", "hours": 255.0, "rej": 1.44}, {"id": "ZM-05", "unit": "Zipper", "hours": 227.0, "rej": 1.41}, {"id": "MT-01", "unit": "Metal Trims", "hours": 217.0, "rej": 1.3}, {"id": "ZM-06", "unit": "Zipper", "hours": 215.0, "rej": 1.45}, {"id": "MT-04", "unit": "Metal Trims", "hours": 213.0, "rej": 1.25}], "reasons": [{"name": "Raw material delay", "n": 45, "share": 28.3}, {"name": "Buyer spec change", "n": 34, "share": 21.4}, {"name": "Machine breakdown", "n": 34, "share": 21.4}, {"name": "Quality rework", "n": 34, "share": 21.4}, {"name": "Power outage", "n": 12, "share": 7.5}], "materials": [{"name": "Brass", "first": 8.4, "last": 10.86}, {"name": "Nickel", "first": 16.53, "last": 16.84}, {"name": "Polyester Tape", "first": 3.63, "last": 3.9}, {"name": "Zinc", "first": 2.99, "last": 2.73}], "risk": [{"id": "ORD-01174", "buyer": "Maple Row Outerwear", "due": "2026-10-13", "value": 11332.0, "score": 53, "level": "Medium"}, {"id": "ORD-01130", "buyer": "Maple Row Outerwear", "due": "2026-10-04", "value": 40081.0, "score": 48, "level": "Medium"}, {"id": "ORD-01141", "buyer": "Veltra Denim Co", "due": "2026-10-01", "value": 11484.0, "score": 45, "level": "Medium"}, {"id": "ORD-01194", "buyer": "Aurora Fashion Group", "due": "2026-10-04", "value": 14899.0, "score": 41, "level": "Medium"}, {"id": "ORD-01140", "buyer": "Harbor & Pine", "due": "2026-10-02", "value": 30050.0, "score": 40, "level": "Medium"}, {"id": "ORD-01200", "buyer": "Harbor & Pine", "due": "2026-10-20", "value": 19883.0, "score": 35, "level": "Medium"}, {"id": "ORD-01166", "buyer": "Maple Row Outerwear", "due": "2026-10-05", "value": 10178.0, "score": 33, "level": "Low"}, {"id": "ORD-01161", "buyer": "Harbor & Pine", "due": "2026-10-12", "value": 46593.0, "score": 30, "level": "Low"}]};const $=s=>document.querySelector(s);const S=D.summary;
+const f1=v=>Number(v).toFixed(1),fi=v=>Math.round(v).toLocaleString('en-US');
+const cls=v=>v<70?'bad':v<85?'warn':'good';
+$('#sub').textContent='Data as of '+S.report_date+' · '+fi(S.total_orders)+' orders';
+const K=[['On-time delivery',f1(S.otd_pct)+'%',fi(S.delivered_orders)+' delivered',cls(S.otd_pct)],
+['Avg days late',f1(S.avg_days_late_when_late),'when late',''],['Open orders',fi(S.open_orders),S.open_orders_already_late+' already late',''],
+['Delivered value','$'+(S.delivered_value_usd/1e6).toFixed(1)+'M','USD',''],['Reject rate',S.overall_reject_rate_pct.toFixed(2)+'%','all inspections',''],
+['Downtime',fi(S.total_downtime_hours)+' h','all machines',''],['Ship date unverified',fi(S.ship_date_unverified),'Logistics to confirm',S.ship_date_unverified?'warn':'']];
+$('#kpis').innerHTML=K.map(k=>`<div class="card"><div class="kl">${k[0]}</div><div class="kv ${k[3]}">${k[1]}</div><div class="ks">${k[2]}</div></div>`).join('');
+const bars=(id,rows,max)=>$(id).innerHTML=rows.map(r=>`<div class="row"><span>${r.l}</span><div class="t"><i class="bg-${r.c}" style="width:${Math.max(2,r.v/max*100)}%"></i></div><b class="${r.c==='ac'?'':r.c}">${r.t}</b></div>`).join('');
+bars('#buyers',D.buyers.map(b=>({l:b.name,v:b.otd,c:cls(b.otd),t:f1(b.otd)+'%'})),100);
+const mx=Math.max(...D.machines.map(m=>m.hours)),avg=D.machines.reduce((a,m)=>a+m.hours,0)/D.machines.length;
+bars('#machines',D.machines.map(m=>({l:m.id+' · '+m.unit.split(' ')[0],v:m.hours,c:(m.hours>1.5*avg&&m.rej>2.5)?'bad':(m.hours>1.5*avg||m.rej>2.5)?'warn':'ac',t:fi(m.hours)+' h · '+f1(m.rej)+'%'})),mx);
+bars('#reasons',D.reasons.map(r=>({l:r.name,v:r.n,c:'ac',t:r.n+' ('+fi(r.share)+'%)'})),Math.max(...D.reasons.map(r=>r.n)));
+$('#mats').innerHTML='<table><tr><th>Material</th><th>First</th><th>Latest</th><th>Change</th></tr>'+D.materials.map(m=>{const c=(m.last/m.first-1)*100;return `<tr><td>${m.name}</td><td>${m.first.toFixed(2)}</td><td>${m.last.toFixed(2)}</td><td class="${c>10?'bad':c>0?'warn':'good'}">${c>0?'+':''}${f1(c)}%</td></tr>`}).join('')+'</table>';
+$('#risk').innerHTML='<tr><th>Order</th><th>Buyer</th><th>Deadline</th><th>Value</th><th>Score</th><th>Level</th></tr>'+D.risk.map(r=>`<tr><td>${r.id}</td><td>${r.buyer}</td><td>${r.due}</td><td>$${fi(r.value)}</td><td>${r.score}</td><td><span class="pill p-${r.level}">${r.level}</span></td></tr>`).join('');
+const units=['All units','Zipper','Metal Trims'];let cur=units[0];
+function trend(){const ms=[...new Set(D.trend.map(t=>t.m))].sort();
+const v=ms.map(m=>{const rows=D.trend.filter(t=>t.m===m&&(cur===units[0]||t.u===cur));const n=rows.reduce((a,r)=>a+r.n,0);return n?rows.reduce((a,r)=>a+r.ok,0)/n*100:null});
+const W=420,H=190,p=30,x=i=>p+i*(W-p-8)/(ms.length-1),y=val=>H-22-(val-50)/50*(H-34);
+let g='';[50,60,70,80,90,100].forEach(t=>g+=`<line x1="${p}" x2="${W-8}" y1="${y(t)}" y2="${y(t)}" stroke="var(--ln)"/><text x="2" y="${y(t)+3}">${t}%</text>`);
+const pts=v.map((val,i)=>val==null?null:x(i)+','+y(Math.max(50,val))).filter(Boolean).join(' ');
+const lab=ms.map((m,i)=>i%3==0?`<text x="${x(i)-14}" y="${H-6}">${m}</text>`:'').join('');
+$('#trend').innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="OTD trend">${g}<polyline fill="none" stroke="var(--ac)" stroke-width="2" points="${pts}"/>${lab}</svg>`;
+$('#tabs').innerHTML=units.map(u=>`<button class="${u===cur?'on':''}" data-u="${u}">${u}</button>`).join('');
+document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{cur=b.dataset.u;trend()})}
+trend();
+</script></body></html>

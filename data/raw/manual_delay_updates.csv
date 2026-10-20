@@ -1,0 +1,162 @@
+order_id,revised_eta,delay_reason,updated_by
+ORD-00010,2025-02-21,QC rework,Merchandising
+ORD-00012,Mar 07,QC rework,Production
+ORD-00016,2025-03-22,Raw material delay,Production
+ORD-00017,2025-03-03,Raw material delay,Merchandising
+ORD-00023,Feb 28,Raw material delay,Logistics
+ORD-00026,Mar 13,machine broke down,Production
+ORD-00039,2025-03-15,QC rework,Merchandising
+ORD-00045,2025-04-04,Spec change,Planning
+ORD-00049,29-Mar-25,Rework after QC,Merchandising
+ORD-00051,2025-04-05,Raw material delay,Logistics
+ORD-00058,Apr 01,Raw material delay,Production
+ORD-00061,Apr 09,Raw material delay,Merchandising
+ORD-00067,Apr 10,Machine breakdown,Production
+ORD-00070,Apr 22,Spec change,Merchandising
+ORD-00076,30/03/2025,QC rework,Planning
+ORD-00083,25/03/2025,Power cut,Planning
+ORD-00086,Mar 30,RM late,Production
+ORD-00087,May 01,RM late,Logistics
+ORD-00091,Mar 31,Buyer changed spec,Merchandising
+ORD-00096,May 10,Machine breakdown,Planning
+ORD-00097,Apr 26,RM late,Planning
+ORD-00104,2025-04-04,Power cut,Logistics
+ORD-00114,2025-04-22,Power cut,Logistics
+ORD-00123,Apr 14,Rework after QC,Logistics
+ORD-00124,2025-04-27,RM late,Merchandising
+ORD-00139,22/05/2025,Machine breakdown,Planning
+ORD-00145,2025-04-21,Spec change,Production
+ORD-00147,Apr 22,Buyer changed spec,Merchandising
+ORD-00148,2025-05-21,Buyer changed spec,Merchandising
+ORD-00150,May 01,Machine breakdown,Production
+ORD-00175,2025-06-09,QC rework,Production
+ORD-00189,12-May-25,Spec change,Logistics
+ORD-00191,May 18,machine broke down,Production
+ORD-00192,2025-05-20,Machine breakdown,Production
+ORD-00198,12-Jun-25,Rework after QC,Planning
+ORD-00203,Jun 20,RM late,Production
+ORD-00214,Jun 08,RM late,Production
+ORD-00222,2025-06-09,Spec change,Planning
+ORD-00226,04/07/2025,machine broke down,Logistics
+ORD-00232,2025-07-16,Raw material delay,Production
+ORD-00240,05/07/2025,QC rework,Merchandising
+ORD-00256,23-Jun-25,machine broke down,Logistics
+ORD-00290,2025-08-11,Buyer changed spec,Production
+ORD-00292,2025-07-20,QC rework,Planning
+ORD-00294,2025-07-06,Spec change,Merchandising
+ORD-00301,Jul 29,Power cut,Production
+ORD-00307,30/07/2025,Buyer changed spec,Logistics
+ORD-00323,08/08/2025,QC rework,Logistics
+ORD-00325,2025-08-15,machine broke down,Planning
+ORD-00330,28/07/2025,Power cut,Production
+ORD-00336,12/09/2025,Rework after QC,Production
+ORD-00347,06-Sep-25,Raw material delay,Merchandising
+ORD-00350,15/08/2025,RM late,Merchandising
+ORD-00356,2025-09-18,Rework after QC,Production
+ORD-00365,Aug 15,QC rework,Logistics
+ORD-00381,2025-09-06,QC rework,Planning
+ORD-00385,Sep 29,Raw material delay,Planning
+ORD-00391,Sep 15,RM late,Production
+ORD-00392,Sep 21,Machine breakdown,Planning
+ORD-00403,06-Oct-25,Machine breakdown,Production
+ORD-00405,09/09/2025,Rework after QC,Planning
+ORD-00410,2025-09-20,Buyer changed spec,Logistics
+ORD-00418,Sep 09,Buyer changed spec,Logistics
+ORD-00420,2025-10-02,Machine breakdown,Planning
+ORD-00423,22/10/2025,QC rework,Planning
+ORD-00425,2025-10-04,Buyer changed spec,Production
+ORD-00431,Sep 24,Spec change,Planning
+ORD-00436,26/10/2025,RM late,Logistics
+ORD-00438,19/09/2025,Machine breakdown,Logistics
+ORD-00443,21-Oct-25,Buyer changed spec,Logistics
+ORD-00452,06/10/2025,RM late,Production
+ORD-00458,Oct 07,QC rework,Production
+ORD-00465,2025-10-07,Machine breakdown,Production
+ORD-00478,Oct 28,Machine breakdown,Production
+ORD-00479,21/10/2025,Power cut,Merchandising
+ORD-00485,2025-11-20,QC rework,Production
+ORD-00490,07-Nov-25,machine broke down,Logistics
+ORD-00492,12/10/2025,Spec change,Merchandising
+ORD-00493,28/10/2025,QC rework,Planning
+ORD-00499,08/11/2025,Rework after QC,Merchandising
+ORD-00503,2025-10-30,Machine breakdown,Merchandising
+ORD-00504,Nov 09,RM late,Merchandising
+ORD-00507,2025-11-08,Raw material delay,Merchandising
+ORD-00511,24-Oct-25,Power cut,Logistics
+ORD-00527,15/11/2025,RM late,Logistics
+ORD-00531,2025-11-29,Raw material delay,Logistics
+ORD-00532,2025-11-27,Rework after QC,Planning
+ORD-00534,2025-11-14,RM late,Merchandising
+ORD-00549,Nov 11,Rework after QC,Logistics
+ORD-00565,03/12/2025,Buyer changed spec,Planning
+ORD-00601,2025-12-26,Raw material delay,Merchandising
+ORD-00616,10/01/2026,Spec change,Logistics
+ORD-00624,31/12/2025,Raw material delay,Logistics
+ORD-00637,18-Jan-26,Raw material delay,Production
+ORD-00645,Jan 02,RM late,Logistics
+ORD-00650,2026-01-01,Raw material delay,Logistics
+ORD-00666,03-Feb-26,RM late,Merchandising
+ORD-00676,Jan 14,Raw material delay,Production
+ORD-00696,2026-01-22,Rework after QC,Logistics
+ORD-00711,Feb 11,machine broke down,Logistics
+ORD-00717,24/01/2026,RM late,Planning
+ORD-00736,2026-02-12,Spec change,Merchandising
+ORD-00737,2026-03-01,RM late,Merchandising
+ORD-00741,Feb 03,Machine breakdown,Logistics
+ORD-00745,15-Feb-26,Power cut,Merchandising
+ORD-00746,19/03/2026,machine broke down,Logistics
+ORD-00749,2026-02-28,RM late,Production
+ORD-00771,22/03/2026,QC rework,Planning
+ORD-00772,25-Mar-26,QC rework,Logistics
+ORD-00773,Mar 03,Spec change,Merchandising
+ORD-00774,21-Mar-26,RM late,Merchandising
+ORD-00779,2026-02-26,Spec change,Planning
+ORD-00785,2026-03-19,Machine breakdown,Planning
+ORD-00793,17/03/2026,machine broke down,Planning
+ORD-00794,2026-04-06,Raw material delay,Planning
+ORD-00796,03-Apr-26,QC rework,Logistics
+ORD-00800,Apr 15,Spec change,Logistics
+ORD-00801,Mar 30,Buyer changed spec,Production
+ORD-00812,2026-03-25,machine broke down,Production
+ORD-00828,2026-04-30,Machine breakdown,Logistics
+ORD-00829,2026-05-04,Machine breakdown,Logistics
+ORD-00832,Apr 10,Buyer changed spec,Logistics
+ORD-00838,Apr 25,Power cut,Merchandising
+ORD-00842,2026-04-01,Machine breakdown,Logistics
+ORD-00850,26/04/2026,Raw material delay,Planning
+ORD-00851,16-May-26,Raw material delay,Logistics
+ORD-00860,May 16,Buyer changed spec,Logistics
+ORD-00867,2026-05-18,Raw material delay,Production
+ORD-00869,Apr 16,RM late,Logistics
+ORD-00871,25/04/2026,Raw material delay,Logistics
+ORD-00878,Apr 26,Spec change,Logistics
+ORD-00884,2026-05-09,Power cut,Merchandising
+ORD-00889,May 25,machine broke down,Planning
+ORD-00897,2026-05-07,QC rework,Logistics
+ORD-00912,19/06/2026,machine broke down,Production
+ORD-00918,12-Jun-26,Machine breakdown,Production
+ORD-00924,May 05,Spec change,Merchandising
+ORD-00936,22-Jun-26,machine broke down,Merchandising
+ORD-00942,24-Jun-26,Power cut,Production
+ORD-00949,01-Jun-26,Machine breakdown,Production
+ORD-00960,2026-05-26,Buyer changed spec,Merchandising
+ORD-00966,Jun 16,Power cut,Merchandising
+ORD-00984,2026-07-03,Machine breakdown,Logistics
+ORD-00994,2026-07-02,machine broke down,Production
+ORD-01005,2026-07-24,Buyer changed spec,Merchandising
+ORD-01012,19/06/2026,RM late,Planning
+ORD-01028,24-Jul-26,Buyer changed spec,Merchandising
+ORD-01030,05/08/2026,QC rework,Production
+ORD-01032,28/07/2026,RM late,Production
+ORD-01037,29/06/2026,QC rework,Merchandising
+ORD-01043,2026-07-02,Machine breakdown,Merchandising
+ORD-01044,25-Jul-26,QC rework,Planning
+ORD-01063,Aug 01,QC rework,Logistics
+ORD-01081,29-Aug-26,Power cut,Production
+ORD-01086,21/08/2026,QC rework,Planning
+ORD-01104,2026-09-15,Buyer changed spec,Logistics
+ORD-01111,15/08/2026,RM late,Planning
+ORD-01119,Sep 13,Raw material delay,Logistics
+ORD-01128,2026-08-31,Rework after QC,Planning
+ORD-01136,28/09/2026,Spec change,Planning
+ORD-01146,Sep 10,Buyer changed spec,Production

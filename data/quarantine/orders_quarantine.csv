@@ -1,0 +1,19 @@
+order_id,buyer_id,unit,order_date,delivery_deadline,total_value_usd,quarantine_reason
+ORD-00479,B003,Zipper,2025-09-06,2025-08-31,11773.4,deadline_before_order_date
+ORD-00440,,Metal Trims,2025-08-19,2025-10-08,10446.8,missing_buyer_id
+ORD-00817,B003,Metal Trims,2026-02-08,2026-02-02,37352.0,deadline_before_order_date
+ORD-00434,B001,Zipper,2025-08-16,2025-08-09,23544.8,deadline_before_order_date
+ORD-00136,,Zipper,2025-03-14,2025-04-28,23082.5,missing_buyer_id
+ORD-00846,B005,Zipper,2026-02-28,2026-02-10,15720.9,deadline_before_order_date
+ORD-01043,,Metal Trims,2026-05-30,2026-07-02,28963.0,missing_buyer_id
+ORD-00303,B001,Zipper,2025-06-05,2025-05-18,5989.8,deadline_before_order_date
+ORD-00255,B005,Metal Trims,2025-05-12,2025-05-05,25251.0,deadline_before_order_date
+ORD-00719,,Metal Trims,2025-12-23,2026-02-19,12620.2,missing_buyer_id
+ORD-00437,,Zipper,2025-08-17,2025-09-28,29881.8,missing_buyer_id
+ORD-00105,,Zipper,2025-03-02,2025-04-09,14617.8,missing_buyer_id
+ORD-00375,B004,Zipper,2025-07-14,2025-07-10,17564.7,deadline_before_order_date
+ORD-00852,,Zipper,2026-03-02,2026-04-05,17348.8,missing_buyer_id
+ORD-00254,,Metal Trims,2025-05-12,2025-06-16,25371.4,missing_buyer_id
+ORD-00304,B006,Zipper,2025-06-06,2025-06-01,11683.2,deadline_before_order_date
+ORD-00660,B008,Zipper,2025-11-24,2025-11-05,18824.8,deadline_before_order_date
+ORD-01155,B001,Zipper,2026-08-07,2026-07-31,2260.8,deadline_before_order_date

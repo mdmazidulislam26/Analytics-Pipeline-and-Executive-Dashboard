@@ -1,0 +1,3 @@
+order_id,revised_eta,delay_reason,updated_by,quarantine_reason
+ORD-00479,21/10/2025,Power cut,Merchandising,parent_order_quarantined
+ORD-01043,2026-07-02,Machine breakdown,Merchandising,parent_order_quarantined

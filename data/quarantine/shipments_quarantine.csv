@@ -1,0 +1,26 @@
+shipment_id,order_id,actual_ship_date,status,quarantine_reason
+SHP-00018,ORD-00018,2025-01-06,Shipped,ship_date_before_order_date
+SHP-00103,ORD-00103,2025-02-22,Shipped,ship_date_before_order_date
+SHP-00105,ORD-00105,2025-04-07,Shipped,parent_order_quarantined
+SHP-00136,ORD-00136,2025-04-23,Shipped,parent_order_quarantined
+SHP-00164,ORD-00164,2025-03-21,Shipped,ship_date_before_order_date
+SHP-00254,ORD-00254,2025-06-03,Shipped,parent_order_quarantined
+SHP-00255,ORD-00255,2025-06-11,Shipped,parent_order_quarantined
+SHP-00303,ORD-00303,2025-07-14,Shipped,parent_order_quarantined
+SHP-00304,ORD-00304,2025-07-21,Shipped,parent_order_quarantined
+SHP-00375,ORD-00375,2025-09-03,Shipped,parent_order_quarantined
+SHP-00434,ORD-00434,2025-09-12,Shipped,parent_order_quarantined
+SHP-00437,ORD-00437,2025-09-22,Shipped,parent_order_quarantined
+SHP-00440,ORD-00440,2025-10-04,Shipped,parent_order_quarantined
+SHP-00479,ORD-00479,2025-10-21,Shipped,parent_order_quarantined
+SHP-00516,ORD-00516,2025-09-16,Shipped,ship_date_before_order_date
+SHP-00655,ORD-00655,2025-11-18,Shipped,ship_date_before_order_date
+SHP-00660,ORD-00660,2026-01-28,Shipped,parent_order_quarantined
+SHP-00719,ORD-00719,2026-02-18,Shipped,parent_order_quarantined
+SHP-00764,ORD-00764,2026-01-06,Partial Shipment,ship_date_before_order_date
+SHP-00817,ORD-00817,2026-03-17,Shipped,parent_order_quarantined
+SHP-00846,ORD-00846,2026-04-08,Shipped,parent_order_quarantined
+SHP-00852,ORD-00852,2026-04-01,Shipped,parent_order_quarantined
+SHP-01043,ORD-01043,2026-07-03,Shipped,parent_order_quarantined
+SHP-01079,ORD-01079,2026-06-12,Shipped,ship_date_before_order_date
+SHP-01154,ORD-01168,2026-08-11,Shipped,ship_date_before_order_date
